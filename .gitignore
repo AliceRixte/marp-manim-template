@@ -1,0 +1,4 @@
+media/
+*.pdf
+*.html
+__pycache__/
