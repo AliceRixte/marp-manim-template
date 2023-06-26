@@ -65,21 +65,11 @@ h1 {
 
 /****** Two columns slides ******/
 
-div.twocols {
-  margin-top: 10px;
-  column-count: 2;
+.container{
+  display: flex;
 }
-div.twocols p:first-child,
-div.twocols h1:first-child,
-div.twocols h2:first-child,
-div.twocols ul:first-child,
-div.twocols ul li:first-child,
-div.twocols ul li p:first-child {
-  margin-top: 0 !important;
-}
-div.twocols p.break {
-  break-before: column;
-  margin-top: 0;
+.col{
+  flex: 1;
 }
 
 

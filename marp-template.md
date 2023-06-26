@@ -42,34 +42,41 @@ foobar
 
 ---
 
-# Two columns example
+# Three columns example
 
-<div class="twocols">
+<div class="container">
 
-<p>
+<div class="col">
 
-## Left
+# **Left**
 
-1. hedsuifh
-1. zdjhaz_dha
-1. juiofezjfezi
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ex quis quam porta consequat. Pellentesque hendrerit, orci eu rhoncus fringilla, leo ligula fermentum libero, vitae tincidunt nulla lorem pretium diam.
 
-</p>
+</div>
 
-<p class="break">
+<div class="col">
 
-## Right
+# **Middle**
 
 - Normal item
 - Normal item
-
 * This item will be fragmented
-
 - Normal item
 - Normal item
 
-</p>
+</div>
 
+<div class="col">
+
+# **Right**
+
+- Normal item
+- Normal item
+* Another fragment 
+- Normal item
+- Normal item
+
+</div>
 </div>
 
 ---
@@ -81,44 +88,46 @@ foobar
 ---
 # Manim videos
 
-- For now, they only render properly in HTML.
+- Sadly, they only render properly in HTML, pdf doesn't like them :cry:
 
 ---
-# Beamer like boxes
-<div class="twocols">
-<p>
+# Beamer-like boxes
+<div class="container">
+<div class="col">
+
 <div class="infobox">
 <div class="boxhead"> Some info box</div>
 <div class="boxcontent">
 
 - Some interesting point
 
-  </div>
 </div>
-</p>
+</div>
 
 <div class="alertbox">
 <div class="boxhead">Alert box</div>
-  <div class="boxcontent">
+<div class="boxcontent">
 
 - Something that is utterly not boring
 - Even less boring stuff
 
-  </div>
+</div>
+</div>
 </div>
 
-<p class="break">
+<div class="col">
 <div class="examplebox">
-<div class="boxhead">Example box with a way too long title</div>
-  <div class="boxcontent">
+<div class="boxhead">Example box with a way way too long title</div>
+<div class="boxcontent">
 
 - Maybe there's not enough room in this. We'll see.
 
 Some LaTeX : $\sqrt{x}$
-  </div>
+
+- I feel quite bad about indentation not being possible because of markdown thinking it's code, HTML looks ugly.
+</div>
 </div>
 
-This feels a bit empty, right ?
 
 
-
+</div>
