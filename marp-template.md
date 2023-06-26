@@ -83,7 +83,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis ex quis 
 
 <!-- _class: manim -->
 
-<video  autoplay loop src="./media/videos/marp-template/720p30/CircleToSquare.mp4">
+<video  autoplay loop src="./media/videos/marp-manim-template/720p30/CircleToSquare.mp4">
 
 ---
 # Manim videos
