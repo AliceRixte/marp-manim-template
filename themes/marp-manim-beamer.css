@@ -1,0 +1,146 @@
+
+/* @theme marp-manim-beamer */
+
+@import 'default';
+
+/***** Title page *****/
+
+section.title {
+  --title-height: 130px;
+  --subtitle-height: 80px;
+  --author-height: 50px;
+
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr var(--title-height) var(--subtitle-height) var(--author-height) 1fr;
+  grid-template-areas: "." "title" "subtitle" "author" ".";
+}
+
+section.title h1,
+section.title h2,
+section.title h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: var(--area-height);
+  line-height: var(--area-height);
+  font-size: calc(var(--area-height) * 0.7);
+}
+
+section.title h1 {
+  grid-area: title;
+  --area-height: var(--title-height);
+}
+
+section.title h2 {
+  grid-area: subtitle;
+  --area-height: var(--subtitle-height);
+}
+section.title h3 {
+  margin-top: 60px;
+  grid-area: author;
+  --area-height: var(--author-height);
+}
+
+
+/***** Manim animation *****/
+section.manim {
+  padding: 0;
+  background: black;
+}
+
+section.manim video {
+  position: "absolute";
+  top: 0;
+  min-height:100%;
+}
+
+
+/****** Centered slide titles *****/
+h1 {
+  text-align: center;
+}
+
+
+/****** Two columns slides ******/
+
+div.twocols {
+  margin-top: 10px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+
+
+/****** Beamer-like boxes ******/
+
+.infobox {
+  position: relative;
+  margin-right: 15px;
+  border: solid 1px #77C8F6;
+  margin-bottom: 15px;
+}
+
+.alertbox {
+  position: relative;
+  margin-right: 15px;
+  border: solid 1px #ff8080;
+  margin-bottom: 15px;
+}
+
+.examplebox {
+  position: relative;
+  margin-right: 15px;
+  border: solid 1px #70db70;
+  margin-bottom: 15px;
+}
+
+.boxhead {
+  padding: 8px;
+  padding-left:12px;
+  padding-right:12px;
+  font-weight : bold;
+}
+
+.infobox .boxhead{
+  background: #77C8F688;
+}
+
+.alertbox .boxhead{
+  background: #ff808088;
+}
+
+.examplebox .boxhead{
+  background: #85e08588;
+}
+
+
+.boxcontent {
+  padding-top: 12px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-bottom:5px;
+}
+
+.infobox .boxcontent{
+  background: #77C8F633;
+}
+
+.alertbox .boxcontent{
+  background: #ff808033;
+}
+
+.examplebox .boxcontent{
+  background: #85e08533;
+}
